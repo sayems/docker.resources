@@ -1,0 +1,16 @@
+alias dc="docker-compose"
+alias dm="docker-machine"
+
+# Docker Beta For Mac sucked. Using docker machine again:
+export DM="default"
+# Start the default docker machine
+if [[ "$(docker-machine status $DM)" == "Stopped" ]]
+then
+  docker-machine start $DM
+fi
+
+# Make the default docker machine active
+if [[ "$(docker-machine status $DM)" == "Running" ]]
+then
+  eval "$(docker-machine env $DM)"
+fi
