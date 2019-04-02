@@ -80,5 +80,6 @@ Learning Resources
 [top](#table-of-contents)
 &nbsp;
 
+### Tutorials
 
-
+- [Play with Docker](https://training.play-with-docker.com/)
